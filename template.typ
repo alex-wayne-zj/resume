@@ -1,6 +1,6 @@
 // 字体
 #let font = (
-  "SF Pro", 
+  "SF Pro Display", 
   "PingFang SC"
   // "Source Han Mono SC"
 )
@@ -52,29 +52,6 @@
         box(fill: color)[(missing)]
     }
 }
-
-// 带竖线的侧边栏
-#let sidebar(side, content, with-line: true, side-width: 20%) = layout(size => {
-  let side-size = measure(width: size.width, height: size.height, side)
-  let content-size = measure(width: size.width * (100% - side-width), height: size.height, content)
-  let height = calc.max(side-size.height, content-size.height) + 0.5em
-  grid(
-    columns: (side-width, 0%, 1fr),
-    gutter: 0.75em,
-    {
-      set align(right)
-      v(0.25em)
-      side
-      v(0.25em)
-    },
-    if with-line { line(end: (0em, height), stroke: 0.05em) },
-    {
-      v(0.25em)
-      content
-      v(0.25em)
-    },
-  )
-})
 
 // 个人信息
 #let info(
@@ -143,7 +120,7 @@
   )
 
   // 设置 list 图标
-  set list(marker: ([•], [‣]), spacing: 0.95em)
+  set list(marker: ([‣], [•]), spacing: 0.95em)
 
   // 链接用下划线标识
   show link: it => underline(offset: 3pt, it)

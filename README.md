@@ -2,7 +2,7 @@
 
 # 简历项目
 
-> Based on https://typst.app/project/rw1SLr0IIZZnCrkrsypRQF.
+> Based on https://typst.app/project/rw1SLr0IIZZnCrkrsypRQF and https://github.com/roife/resume.
 
 PDF 版简历，见 [resume-cn](./resume-cn-public.pdf)
 
@@ -18,4 +18,4 @@ PDF 版简历，见 [resume-cn](./resume-cn-public.pdf)
 }
 ```
 
-在当前目录下运行 `make` 就会构造出 4 个版本的简历。
+在当前目录下运行 `make` 就会构造出 2 个版本的简历。

@@ -25,6 +25,7 @@
 #let fa-work = icon("icons/fa-work.svg")
 #let fa-globe = icon("icons/fa-globe.svg")
 
+
 // 设置简历选项与头部
 #show: resume.with(
   // 字体和基准大小
@@ -90,29 +91,8 @@
   tl: [北京航空航天大学],
   tr: [2019.09-2023.06],
 )[
-  本科，软件工程｜GPA排名前*20%*｜获得推荐免试研究生资格。 #linebreak()
+  本科，软件工程｜GPA排名*前20%*｜获得推荐免试研究生资格。 #linebreak()
 ]
-
-
-// == #fa-wrench 专业技能
-
-// #sidebar(with-line: false, side-width: 12%)[
-//   *操作系统*
-
-//   *掌握*
-
-//   *熟悉*
-
-//   *了解*
-// ][
-//   #fa-linux Linux, #h(0.5em) #fa-windows Windows
-
-//   React, JavaScript, Python
-
-//   Vue, TypeScript, Node.js
-
-//   Webpack, Java
-// ]
 
 
 == #fa-work 实习经历
@@ -122,7 +102,7 @@
   bl: [Golang后端实习生],
   br: [2025.05至今],
 )[
-  - 负责AI工作流Windows端应用的后台接口开发：对话框上传文件返回对应推荐提示词，迁移Deepseek服务提供方，生成与验证KOL邀请码，对接算法解析图文URL和视频URL内容，无历史地调用hunyuan-turbo与hunyuan-vision，基于MCP协议让LLM调用工具推荐论文；
+  - 负责AI工作流Windows端应用的后台服务开发：主对话框上传文件返回对应推荐提示词，迁移Deepseek云服务提供方，生成与验证KOL邀请码，对接算法解析图文URL和视频URL的文本和图像内容，支持无历史地调用hunyuan-turbo与hunyuan-vision模型，基于MCP协议让LLM调用工具推荐论文；
   - 梳理应用后台的SRE可观测性监控：主调监控、被调监控、事件监控等。
 ]
 
@@ -131,7 +111,7 @@
   bl: [全栈开发实习],
   br: [2024.08-2025.01],
 )[
-  - 负责协助公司服务管理平台Vue前端和Gin后端的开发与维护：根据需求开发功能（如搭建镜像管理与镜像详情页面），修复bug（如改进页面query与filter变量ref同步逻辑），优化改善用户体验（如应用登记后实时返回CI/CD流水线状态）等；
+  - 负责协助公司服务管理平台Vue前端和Gin后端的开发与维护：根据一线用户需求开发功能（如搭建镜像管理与镜像详情页面），修复性能bug（如改进可过滤表格页面query与filter变量ref同步逻辑），优化改善用户体验（如应用登记后实时返回CI/CD流水线状态）等；
   - 基于DataEase BI和Doris数据库搭建业务数据仪表盘，助力运营决策。
 ]
 
@@ -156,7 +136,6 @@
 // ]
 
 
-
 == #fa-code 项目经历
 
 #item(
@@ -165,7 +144,7 @@
   bl: [研究者与开发者],
   br: [2023.09至今],
 )[
-  - 基于多人体追踪ByteTrack模型和改进Token Merging模块的视频动作识别VideoMAE模型，开发搭建教室场景下的视频学生动作识别系统，并与北师大研究者合作基于学生和老师动作构建教学指标辅助智慧教育。
+  - 基于多人体追踪ByteTrack模型和改进Token Merging模块的视频动作识别VideoMAE模型，开发搭建教室场景下的视频学生动作识别系统，并与北师大研究者合作基于学生动作构建教学指标辅助智慧教育。
 ]
 
 // #item(
@@ -186,6 +165,7 @@
   - 十一天的敏捷开发，项目基于Vue.js+SpringBoot框架，平台功能类似ResearchGate，我负责前端开发和业务拆解。
 ]
 
+
 == #fa-wrench 专业技能
 
 #grid(
@@ -195,7 +175,7 @@
   gutter: 8pt,
   [*编程语言*], [熟悉Golang, Python, JavaScript等；学习并使用过C, C++, Java等；],
   [*应用开发*],
-  [Gin, Django等后端框架和Vue.js前端框架，MySQL, Redis等数据库的使用和数据库设计， Docker, K8s等DevOps工具，能熟练使用生成式AI工具提高工作效率；],
+  [Gin, Django等后端框架和Vue.js前端框架，MySQL数据库开发与设计，了解RPC微服务架构开发流程，Docker, K8s等DevOps工具，能熟练使用生成式AI工具提高工作效率；],
   [*主修课程*],
   [软件工程、计算机网络、操作系统、数据库原理、算法与数据结构、Linux系统编程、编译原理等；],
   [*外语*], [英语六级647。],
